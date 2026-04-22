@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For Jayshri ❤️</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #ffe6e6;
+      font-family: Arial;
+      margin-top: 100px;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #yes {
+      background-color: green;
+      color: white;
+    }
+
+    #no {
+      background-color: red;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Jayshri, will you be my friend? 💖</h1>
+
+<button id="yes">Yes 😄</button>
+<button id="no">No 😢</button>
+
+<script>
+let no = document.getElementById("no");
+
+no.onmouseover = function() {
+  no.style.left = Math.random()*window.innerWidth + "px";
+  no.style.top = Math.random()*window.innerHeight + "px";
+};
+
+document.getElementById("yes").onclick = function() {
+  document.body.innerHTML = "<h1>Yay! 🎉 She said YES 😍</h1>";
+};
+</script>
+
+</body>
+</html>
